@@ -11,15 +11,24 @@
     <div class="div-submain">
       <h3 class="div-child-contain">Ongoing Cources (03)</h3>
 
+      <!-- <ion-grid>
+        <ion-row>
+          <ion-col size="12" size-xs="12" size-sm="6" size-md="4" size-lg="3" *ngFor="let course of courses">
+            <app-course [course]="course"></app-course>
+          </ion-col>
+        </ion-row>
+      </ion-grid>  -->
+
+
       <ion-grid>
         <ion-row>
           <ion-col size="12" size-xs="12" size-sm="6" size-md="4" size-lg="3" *ngFor="let course of courses">
             <div class="div-main">
               <div class="div-contain-main">
-                <div class="div-contain-left">
+                <div class="div-contain-left" [ngStyle]="{ backgroundColor: course.color }">
 
 
-                  <span class="div-title">{{course.title}} </span>
+                  <span class="div-title" [ngStyle]="{ color: course.color }">{{course.title}} </span>
                   <h1 class="div-contain">{{course.contain}} </h1>
                   <span class="div-subcontain">{{course.subContain}}</span>
                 </div>
@@ -48,13 +57,13 @@
                 </div>
               </div>
               <div class="div-sub-contain">
-                <div class="progress-contain" *ngIf="course.progressBar">
+                <div class="progress-contain" *ngIf="course.progressBar" >
                   <ion-progress-bar class="progress-bar" color="secondary" [value]="course.progressBar">
                   </ion-progress-bar>
                   <span class="progress-bar-contain">{{course.progressBarLabel}}</span>
                 </div>
 
-                <h4 class="div-child-contain">{{course.childContain}}</h4>
+                <h4 class="div-child-contain" [ngClass]="{ 'child-contain-margin': !course.progressBar }">{{course.childContain}}</h4>
                 <h3 class="div-sub-child-contain"> {{course.subcChildContain}}</h3>
                 <p class="div-sub-child-subcontain"> {{course.subTitle}}</p>
                 <span class="div-sub-child-subcontain">{{course.subChildSubContain}}</span>
@@ -71,7 +80,7 @@
 
         </ion-row>
       </ion-grid>
-
+      <h3 class="div-child-contain">Ongoing Cources (03)</h3>
     </div>
   </div>
 </ion-content>

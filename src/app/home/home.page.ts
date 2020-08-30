@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -10,12 +10,11 @@ export class HomePage {
   courses: any[];
 
 
-   
-
   constructor() {
 
     this.courses =[
       {
+        color:'#cd7065',
         title: 'Internet',
         contain: 'Human Computer Interaction',
         subContain:'COURSE',
@@ -37,6 +36,7 @@ export class HomePage {
         button:'Continue'
       },
       {
+        color:'#886c5e',
         title: 'Product Training',
         contain: 'Modeling with SOLID WORKS',
         subContain:'COURSE',
@@ -58,6 +58,7 @@ export class HomePage {
         button:'Continue'
       },
       {
+        color:'#a0a9d6',
         title: 'Soft Skills',
         contain: 'Iot Development with Windows 10',
         subContain:'TRAINING   10 Jan - 01 Mar 2018',
@@ -71,6 +72,7 @@ export class HomePage {
         iconLabel4:'10',
         childContain:'Next',
         subcChildContain:'Wednesday, 18th Feb, 2018 IIT Mumbai',
+       // color:'#ffbf00',
         subTitle:'Main Gate Road,Powai,Mumbail-400076',
         subChildSubContain:'This class covers the basics of settings up grid in sketch, it is very popular couese taken by man ......',
         //subHeadingIcon:'document-text-outline',
@@ -78,6 +80,7 @@ export class HomePage {
         button:'Add to Calender'
       },
       {
+        color:'#80dce8',
         title: 'Health',
         contain: 'Excel 2016:Advanced Formulas and Functions',
         subContain:'TRAINING   10 Jan - 01 Mar 2018',
@@ -101,6 +104,11 @@ export class HomePage {
       },
 
     ]
+
+    var abc = this.courses[0].subContain;
+    console.log('456',abc);
+
+    console.log('14 test',this.courses[3].subContain);
   }
 
   
