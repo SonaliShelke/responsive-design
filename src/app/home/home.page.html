@@ -11,59 +11,67 @@
     <div class="div-submain">
       <h3 class="div-child-contain">Ongoing Cources (03)</h3>
 
-      <div class="div-main">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" size-xs="12" size-sm="6" size-md="4" size-lg="3" *ngFor="let course of courses">
+            <div class="div-main">
+              <div class="div-contain-main">
+                <div class="div-contain-left">
 
-        <div class="div-contain-main">
-          <div class="div-contain-left">
-            <span class="div-title">Internet</span>
-            <h1 class="div-contain"> Human Computer Interaction</h1>
-            <span class="div-subcontain">COURSE</span>
-          </div>
-          <div class="div-contain-right">
-            <div class="contain">
-              <ion-icon class="contain-icon " name="people-outline"></ion-icon>
-              <span class="contain-label">68</span>
+
+                  <span class="div-title">{{course.title}} </span>
+                  <h1 class="div-contain">{{course.contain}} </h1>
+                  <span class="div-subcontain">{{course.subContain}}</span>
+                </div>
+                <div class="div-contain-right">
+                  <div class="contain">
+
+                    <ion-icon class="contain-icon " [name]="course.icon1"></ion-icon>
+                    <span class="contain-label">{{course.iconLabel1}}</span>
+                  </div>
+                  <div class="contain">
+                    <ion-icon class="contain-icon " [name]="course.icon2"></ion-icon>
+                    <span class="contain-label">{{course.iconLabel2}}</span>
+                  </div>
+
+                  <div class="contain">
+
+                    <ion-icon class="contain-icon " [name]="course.icon3"></ion-icon>
+                    <span class="contain-label">{{course.iconLabel3}}</span>
+                  </div>
+
+                  <div class="contain">
+                    <ion-icon class="contain-icon " [name]="course.icon4"></ion-icon>
+                    <span class="contain-label">{{course.iconLabel4}}</span>
+                  </div>
+
+                </div>
+              </div>
+              <div class="div-sub-contain">
+                <div class="progress-contain" *ngIf="course.progressBar">
+                  <ion-progress-bar class="progress-bar" color="secondary" [value]="course.progressBar">
+                  </ion-progress-bar>
+                  <span class="progress-bar-contain">{{course.progressBarLabel}}</span>
+                </div>
+
+                <h4 class="div-child-contain">{{course.childContain}}</h4>
+                <h3 class="div-sub-child-contain"> {{course.subcChildContain}}</h3>
+                <p class="div-sub-child-subcontain"> {{course.subTitle}}</p>
+                <span class="div-sub-child-subcontain">{{course.subChildSubContain}}</span>
+                <div class="div-sub-heading">
+
+                  <ion-icon class="div-sub-icon" [name]="course.subHeadingIcon"></ion-icon>
+                  <span class="div-span-label">{{course.subHeadingIconLabel}}</span>
+                </div>
+
+                <ion-button class="div-button">{{course.button}}</ion-button>
+              </div>
             </div>
-            <div class="contain">
-              <ion-icon class="contain-icon " name="star-outline"></ion-icon>
-              <span class="contain-label">3.5</span>
-            </div>
+          </ion-col>
 
-            <div class="contain">
+        </ion-row>
+      </ion-grid>
 
-              <ion-icon class="contain-icon " name="chatbubbles-outline"></ion-icon>
-              <span class="contain-label">24</span>
-            </div>
-
-            <div class="contain">
-              <ion-icon class="contain-icon " name="book-outline"></ion-icon>
-              <span class="contain-label">15</span>
-            </div>
-
-          </div>
-        </div>
-        <div class="div-sub-contain">
-          <div class="progress-contain">
-            <ion-progress-bar class="progress-bar" color="secondary" value="0.3"></ion-progress-bar>
-            <span class="progress-bar-contain">(34%)</span>
-          </div>
-
-          <h4 class="div-child-contain">Next:</h4>
-          <h3 class="div-sub-child-contain"> How to set DIV in sketch App</h3>
-          <span class="div-sub-child-subcontain">This lessons covers the basics of settings up grid in sketch, it is
-            very
-            popular couese taken by man ......</span>
-          <div class="div-sub-heading">
-
-            <ion-icon class="div-sub-icon" name="document-text-outline"></ion-icon>
-            <span class="div-span-label">12 min Read</span>
-          </div>
-
-          <ion-button class="div-button">Continue</ion-button>
-
-
-        </div>
-      </div>
     </div>
   </div>
 </ion-content>
