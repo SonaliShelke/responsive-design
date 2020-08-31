@@ -5,6 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { CoursePageModule } from '../course/course.module';
+import { CoursePage } from '../course/course.page';
+import { CourseTrainingComponent } from '../course-training/course-training.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/compiler';
+
 
 
 @NgModule({
@@ -12,8 +17,12 @@ import { HomePageRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    CoursePageModule
+    
   ],
-  declarations: [HomePage]
+  declarations: [HomePage,CourseTrainingComponent],
+
+
 })
 export class HomePageModule {}

@@ -1,0 +1,7 @@
+--no-module
+
+ionic generate page courseTraining --no-module
+
+
+ionic generate page courseTraining --module=app.module.ts 
+--without-module

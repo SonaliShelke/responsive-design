@@ -1,0 +1,54 @@
+<div class="div-main">
+  <div class="div-contain-main">
+    <div class="div-contain-left" [ngStyle]="{ backgroundColor: course.color }">
+
+
+      <span class="div-title" [ngStyle]="{ color: course.color }">{{course.title}} </span>
+      <h1 class="div-contain">{{course.contain}} </h1>
+      <span class="div-subcontain">{{course.subContain}}</span>
+    </div>
+    <div class="div-contain-right">
+      <div class="contain">
+
+        <ion-icon class="contain-icon " [name]="course.icon1"></ion-icon>
+        <span class="contain-label">{{course.iconLabel1}}</span>
+      </div>
+      <div class="contain">
+        <ion-icon class="contain-icon " [name]="course.icon2"></ion-icon>
+        <span class="contain-label">{{course.iconLabel2}}</span>
+      </div>
+
+      <div class="contain">
+
+        <ion-icon class="contain-icon " [name]="course.icon3"></ion-icon>
+        <span class="contain-label">{{course.iconLabel3}}</span>
+      </div>
+
+      <div class="contain">
+        <ion-icon class="contain-icon " [name]="course.icon4"></ion-icon>
+        <span class="contain-label">{{course.iconLabel4}}</span>
+      </div>
+
+    </div>
+  </div>
+  <div class="div-sub-contain">
+    <div class="progress-contain" *ngIf="course.progressBar">
+      <ion-progress-bar class="progress-bar" color="secondary" [value]="course.progressBar">
+      </ion-progress-bar>
+      <span class="progress-bar-contain">{{course.progressBarLabel}}</span>
+    </div>
+
+    <h4 class="div-child-contain" [ngClass]="{ 'child-contain-margin': !course.progressBar }">{{course.childContain}}
+    </h4>
+    <h3 class="div-sub-child-contain"> {{course.subcChildContain}}</h3>
+    <p class="div-sub-child-subcontain"> {{course.subTitle}}</p>
+    <span class="div-sub-child-subcontain">{{course.subChildSubContain}}</span>
+    <div class="div-sub-heading">
+
+      <ion-icon class="div-sub-icon" [name]="course.subHeadingIcon"></ion-icon>
+      <span class="div-span-label">{{course.subHeadingIconLabel}}</span>
+    </div>
+
+    <ion-button class="div-button">{{course.button}}</ion-button>
+  </div>
+</div> 

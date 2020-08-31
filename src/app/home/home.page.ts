@@ -105,10 +105,6 @@ export class HomePage {
 
     ]
 
-    var abc = this.courses[0].subContain;
-    console.log('456',abc);
-
-    console.log('14 test',this.courses[3].subContain);
   }
 
   
