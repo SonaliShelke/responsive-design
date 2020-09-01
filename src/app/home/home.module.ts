@@ -4,11 +4,9 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
-import { HomePageRoutingModule } from './home-routing.module';
-import { CoursePageModule } from '../course/course.module';
-import { CoursePage } from '../course/course.page';
+import { HomePageRoutingModule } from './home-routing.module'
 import { CourseTrainingComponent } from '../course-training/course-training.component';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/compiler';
+
 
 
 
@@ -17,12 +15,12 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/compiler';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule,
-    CoursePageModule
-    
+    HomePageRoutingModule
+
+
   ],
-  declarations: [HomePage,CourseTrainingComponent],
+  declarations: [HomePage, CourseTrainingComponent],
 
 
 })
-export class HomePageModule {}
+export class HomePageModule { }

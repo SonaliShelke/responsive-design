@@ -1,33 +1,78 @@
-<!-- <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>̦
-  </ion-toolbar>
-</ion-header> -->
-
 <ion-content [fullscreen]="true">
   <div class="main">
-    <div class="div-submain">
-      <h3 class="div-child-contain">Ongoing Cources (03)</h3>
+    <ion-grid class="grid-no-padding">
+      <ion-row>
+        <ion-col size="9">
+          <h3 class="div-child-contain">Ongoing Cources (03)</h3>
+          <ion-grid>
+            <ion-row>
+              <ion-col size="12" size-xs="12" size-sm="6" size-md="6" size-lg="4" *ngFor="let course of courses">
+                <app-course-training [course]="course"></app-course-training>
+              </ion-col>
+            </ion-row>
+          </ion-grid> 
 
-      <ion-grid>
-        <ion-row>
-          <ion-col size="12" size-xs="12" size-sm="6" size-md="6" size-lg="4" *ngFor="let course of courses">
-            <app-course-training [course]="course"></app-course-training>
-          </ion-col>
-        </ion-row>
-      </ion-grid> 
+          <h3 class="div-child-contain">Ongoing Training (03)</h3>
+          <ion-grid>
+            <ion-row>
+              <ion-col size="12" size-xs="12" size-sm="6" size-md="6" size-lg="4" *ngFor="let training of trainings">
+                <app-course-training [course]="training"></app-course-training>
+              </ion-col>
+            </ion-row>
+          </ion-grid> 
+        </ion-col>
 
-      <h3 class="div-child-contain">Ongoing Training (03)</h3>
+        <ion-col size="3" class="div-right-sidenav-main ">
 
-      <ion-grid>
-        <ion-row>
-          <ion-col size="12" size-xs="12" size-sm="6" size-md="6" size-lg="4" *ngFor="let training of trainings">
-            <app-course-training [course]="training"></app-course-training>
-          </ion-col>
-        </ion-row>
-      </ion-grid> 
-    </div>
+
+          <div class="div-right-sidenav-main">
+
+            <ion-icon class="div-header" name="calendar-outline"></ion-icon>
+            <ion-icon class="div-header" name="notifications-outline"></ion-icon>
+
+            <ion-icon class="div-header" name="people-outline"></ion-icon><span class="div-header">|</span>
+
+
+            <span>
+              <img class="div-user-profile" src="../../assets/image/userprofile.jpg">
+              <span class="div-user-profile-label">John Doe</span>
+              <ion-icon class="div-user-profile-arrow-icon " name="chevron-down-outline"></ion-icon>
+            </span>
+
+
+            <div class="div-icon-main">
+              <ion-icon class="div-ribbon-icon" name="ribbon-sharp"></ion-icon>
+              <ion-icon class="div-trophy-icon" name="trophy-sharp"></ion-icon>
+              <ion-icon class="div-usd-logo-icon" name="logo-usd"></ion-icon>
+
+            </div>
+            <hr class="div-hr-divider">
+            <div class="div-label-main">
+              <div class="div-label"> You have earned <b>120.5 Points </b>in last 6 month</div>
+              <hr class="div-hr-divider">
+
+              <div class="div-label">
+                <ion-icon class="div-clipboard-icon" name="clipboard-outline"></ion-icon> <b>12/18 Courses </b>
+                Completed
+              </div>
+              <hr class="div-hr-divider">
+
+              <div class="div-label">
+                <ion-icon class="div-clipboard-icon" name="time-outline"></ion-icon> <b>36.5 hrs </b>
+                / 120 hours utilised
+                <ion-progress-bar class="div-small-progress-bar" color="secondary" value="0.4">
+                </ion-progress-bar>
+              </div>
+              <hr class="div-hr-divider">
+
+            </div>
+
+
+          </div>
+
+        </ion-col>
+
+      </ion-row>
+    </ion-grid> 
   </div>
 </ion-content>

@@ -13,119 +13,77 @@
   margin: 0px;
 }
 
-
-
-.div-main {
-  background-color: #f7f9fb;
-  border-radius: 10px;
-  margin: 7px;
-  width: 95%;
-}
-
-.div-contain-main {
-  display: flex;
-}
-.div-contain-left {
-  background: url("../../assets/image/hand-shake-img.jpg") no-repeat, #f12b2b;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: multiply;
-  padding: 11px 15px;
-  color: white;
-  float: left;
-  width: calc(100% - 94px);
-}
-
-
-
-.div-title {
-  color: #e18278;
-  padding: 2px 17px;
-  background-color: white;
-  margin-top: 5px;
-  border-radius: 15px;
-  font-weight: 600;
-  font-size: 13px;
-  letter-spacing: 1px;
-}
-
-.div-contain {
-  margin-top: 70px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.div-subcontain {
-  margin-top: 10px;
-}
-
-.div-contain-right {
-  float: right;
-}
-.contain {
-  padding: 8px;
-  border-bottom: #edf0f1 1px solid;
-  text-align: center;
-  width: 94px;
-}
-.contain-icon {
-  font-size: 30px;
-  color: gray;
-
-  vertical-align: middle;
-}
-.contain-label {
-  color: blue;
+.div-header {
+  color: #6a7891;
   font-size: 20px;
-
+  margin: 5px;
+  margin-left: 20px;
+  //padding-right: 10px;
   vertical-align: middle;
+}
+
+.div-user-profile {
+  width: 29px;
+  border-radius: 20px;
+  vertical-align: middle;
+  object-fit: cover;
+}
+.div-user-profile-label {
+  color: #6a7891;
+  padding-left: 12px;
+}
+.div-user-profile-arrow-icon {
+  color: #6a7891;
+  vertical-align: middle;
+  font-size: 12px;
+  padding-left: 12px;
+}
+.div-right-sidenav-main {
+  background-color: #f7f9fb;
   padding: 10px;
 }
-.div-sub-contain {
-  margin-left: 20px;
-  padding-bottom: 15px;
+.div-icon-main {
+  margin-top: 25px;
+  font-size: 25px;
+  //margin-left: 7px;
 }
+.div-icon-main > ion-icon {
+  margin-right: 10px;
+}
+.div-ribbon-icon {
+  color: #f0512e; //#b24539
+}
+.div-trophy-icon {
+  color: #b24539;
+}
+.div-usd-logo-icon {
+  color: #47c5ff;
+}
+.div-label-main {
+  color: #8e9db2;
 
-.progress-contain {
-  margin-top: 30px;
+  //margin-top: 5px;
 }
+.div-label {
+  margin: 15px 7px;
 
-.progress-bar {
-  width: calc(100% - 70px);
-  float: left;
-  margin-top: 10px;
+  padding-bottom: 5px;
 }
-.progress-bar-contain {
-  padding-left: 8px;
+.div-hr-divider {
+  background-color: #d2d6de;
 }
-
-.div-sub-child-contain {
-  color: #368fff;
-  margin-top: 2px;
-}
-.div-sub-child-subcontain {
-  color: #b0b7c6;
-}
-.div-sub-heading {
-  padding-top: 10px;
-
-  color: #abb2c0;
+.div-clipboard-icon {
+  font-size: 20px;
+  margin-right: 5px;
   vertical-align: middle;
 }
-.div-sub-icon {
-  vertical-align: middle;
-  font-size: 30px;
-}
-.div-span-label {
-  font-size: 15px;
-  vertical-align: middle;
-}
-.div-button {
-  font-size: 14px;
-  font-weight: bold;
+.div-small-progress-bar {
+  // ion-progress-bar {
 
-  text-align: center;
-  width: 200px;
-}
-.child-contain-margin{
-  margin-top: 10px;
+  --ion-color-base-rgb: rgb(225, 228, 234);
+  // --buffer-background: red;
+  --progress-background: rgb(88, 214, 141);
+  //}
+  //color: green;
+  margin-top: 5px;
 }
