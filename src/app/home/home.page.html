@@ -1,12 +1,32 @@
 <ion-content [fullscreen]="true">
-  <div class="main">
+
+  <div class="div-main">
+
+    <!-- <div class="div-submain"> -->
     <ion-grid class="grid-no-padding">
       <ion-row>
-        <ion-col size="9">
+        <ion-col size="8" class="div-submain">
+          <div class="div-header">
+
+            <img class="div-header-logo" src="../../assets/image/company-logo-3.png">
+
+            <span class="div-header-right">
+              <span class="div-header-logo-icon">
+                <ion-icon class="div-header-icon " name="search-outline"></ion-icon>
+                <ion-input class="div-header-input " type="text" placeholder="Type here to search"></ion-input>
+                <ion-icon class="div-header-icon" name="funnel-outline"></ion-icon>
+                <ion-icon class="div-header-arrow-icon " name="chevron-down-outline"></ion-icon>
+              </span>
+            </span>
+          </div>
+          <!-- </div> -->
           <h3 class="div-child-contain">Ongoing Cources (03)</h3>
+          <!-- Searchbar with a placeholder -->
+
+
           <ion-grid>
             <ion-row>
-              <ion-col size="12" size-xs="12" size-sm="6" size-md="6" size-lg="4" *ngFor="let course of courses">
+              <ion-col size="12" size-xs="12" size-sm="6" size-md="6" size-lg="5" *ngFor="let course of courses">
                 <app-course-training [course]="course"></app-course-training>
               </ion-col>
             </ion-row>
@@ -15,14 +35,14 @@
           <h3 class="div-child-contain">Ongoing Training (03)</h3>
           <ion-grid>
             <ion-row>
-              <ion-col size="12" size-xs="12" size-sm="6" size-md="6" size-lg="4" *ngFor="let training of trainings">
+              <ion-col size="12" size-xs="12" size-sm="6" size-md="6" size-lg="5" *ngFor="let training of trainings">
                 <app-course-training [course]="training"></app-course-training>
               </ion-col>
             </ion-row>
           </ion-grid> 
         </ion-col>
 
-        <ion-col size="3" class="div-right-sidenav-main ">
+        <ion-col size="4" class="div-right-sidenav-main ">
 
 
           <div class="div-right-sidenav-main">
@@ -69,10 +89,12 @@
 
             <div class="div-label-main">
               <div class="div-label"> <b>Hrs Utilised </b>in <u>last 6 month</u> <b> View</b></div>
+              <img src="../../assets/image/bar-chart.png">
             </div>
             <hr class="div-hr-divider">
             <div class="div-label-main">
               <div class="div-label"> <b>Performance </b>in <u>last 6 month</u> <b> View</b></div>
+              <img src="../../assets/image/group-chart.png">
             </div>
             <hr class="div-hr-divider">
 
@@ -102,6 +124,7 @@
                   </ion-col>
                   <ion-col class="ion-no-padding">
                     <span class="div-information-label"> Practical UX Weekly</span>
+
                   </ion-col>
                 </ion-row>
               </ion-grid>
@@ -109,7 +132,70 @@
             </div>
             <hr class="div-hr-divider">
             <div class="div-label-main">
-              <div class="div-label"> <b>Ajenda </b>in this<u> month</u> <b> View</b></div>
+              <div class="div-label"> <b>Resourses </b>for you</div>
+
+              <ion-grid>
+                <ion-row>
+                  <ion-col size-lg="2" size-md="4" class="ion-no-padding">
+                    <ion-icon class="div-newspaper-icon" name="newspaper-outline"></ion-icon>
+                  </ion-col>
+                  <ion-col size-lg="8" size-md="4" class="ion-no-padding">
+                    <!-- <ion-icon class="div-clipboard-icon" name="clipboard-outline"></ion-icon> -->
+                    <span class="div-label-video">Video Game Playing with
+                      Imagination<br><span class="div-label-practical">Practical UX Weekly</span> </span>
+                  </ion-col>
+                  <ion-col size-lg="2" size-md="4" class="ion-no-padding">
+                    <ion-icon class="div-newspaper-icon" name="download-outline"></ion-icon>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size-lg="2" size-md="4" class="ion-no-padding">
+                    <ion-icon class="div-newspaper-icon" name="newspaper-outline"></ion-icon>
+                  </ion-col>
+                  <ion-col size-lg="8" size-md="4" class="ion-no-padding">
+                    <!-- <ion-icon class="div-clipboard-icon" name="clipboard-outline"></ion-icon> -->
+                    <span class="div-label-video">Video Game Playing with
+                      Imagination<br><span class="div-label-practical">Practical UX Weekly</span> </span>
+                  </ion-col>
+                  <ion-col size-lg="2" size-md="4" class="ion-no-padding">
+                    <ion-icon class="div-newspaper-icon" name="download-outline"></ion-icon>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size-lg="2" size-md="4" class="ion-no-padding">
+                    <ion-icon class="div-newspaper-icon" name="newspaper-outline"></ion-icon>
+                  </ion-col>
+                  <ion-col size-lg="8" size-md="4" class="ion-no-padding">
+                    <!-- <ion-icon class="div-clipboard-icon" name="clipboard-outline"></ion-icon> -->
+                    <span class="div-label-video">Video Game Playing with
+                      Imagination<br><span class="div-label-practical">Practical UX Weekly</span> </span>
+                  </ion-col>
+                  <ion-col size-lg="2" size-md="4" class="ion-no-padding">
+                    <ion-icon class="div-newspaper-icon" name="download-outline"></ion-icon>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size-lg="2" size-md="4" class="ion-no-padding">
+                    <ion-icon class="div-newspaper-icon" name="newspaper-outline"></ion-icon>
+                  </ion-col>
+                  <ion-col size-lg="8" size-md="4" class="ion-no-padding">
+                    <!-- <ion-icon class="div-clipboard-icon" name="clipboard-outline"></ion-icon> -->
+                    <span class="div-label-video">Video Game Playing with
+                      Imagination<br><span class="div-label-practical">Practical UX Weekly</span> </span>
+                  </ion-col>
+                  <ion-col size-lg="2" size-md="4" class="ion-no-padding">
+                    <ion-icon class="div-newspaper-icon" name="download-outline"></ion-icon>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+
+
+              <!-- <ion-icon class="div-clipboard-icon" name="clipboard-outline"></ion-icon>
+              <span class="div-clipboard-label">Video Game Playing with
+                Imagination <br> <span class="div-practical-label">Practical UX Weekly</span></span><br>
+
+              <ion-icon class="div-clipboard-icon" name="clipboard-outline"></ion-icon> -->
+
             </div>
           </div>
 
@@ -117,5 +203,6 @@
 
       </ion-row>
     </ion-grid> 
+    <!-- </div> -->
   </div>
 </ion-content>

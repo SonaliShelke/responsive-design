@@ -1,16 +1,56 @@
-̦.main {
-  // background-color: pink;
-  padding-top: 17px;
+.div-main {
+  // background-color: lightyellow;
+  background-color: #f7f9fb;
+  //height: 100%;
   width: 100%;
+  padding-left: 30px;
 }
+.div-header {
+  //display: inline-block;
+}
+
+.div-header-right {
+  //display: inline-block;
+  float: right;
+  color: #abb2c0;
+}
+.div-header-logo-icon {
+  display: inline-block;
+}
+.div-header-icon {
+  float: left;
+  vertical-align: middle;
+  margin-top: 19px;
+}
+.div-header-logo {
+  width: 55px;
+  //float: left;
+}
+.div-header-input {
+  width: 200px;
+  float: left;
+  margin-top: 5px;
+  font-size: 15px;
+  color: #abb2c0; //red; //#c9ced6;
+}
+.div-header-arrow-icon {
+  width: 12px;
+  margin-top: 22px;
+}
+
 .div-submain {
-  //background-color: green;
-  padding-left: 10px;
-  margin-left: 20px;
+  background-color: #ffffff;
+  //padding-left: 10px;
+  // margin-left: 30px;
+  margin-top: 15px;
+  border-radius: 7px;
+  padding-right: 20px;
 }
+
 .div-child-contain {
-  color: #8e9db2;
+  color: #5e6f8d;
   margin: 0px;
+  margin-left: 17px;
 }
 
 .div-header {
@@ -39,8 +79,9 @@
   padding-left: 12px;
 }
 .div-right-sidenav-main {
-  background-color: #f7f9fb;
+  //background-color: #f7f9fb;
   padding: 10px;
+  margin-top: 10px;
 }
 .div-icon-main {
   margin-top: 25px;
@@ -94,4 +135,25 @@
 }
 .grid-row-layout {
   padding-bottom: 25px;
+}
+
+.div-clipboard-label {
+  padding-left: 8px;
+}
+.div-practical-label {
+  //padding-left: 10px;
+  margin-left: 10px;
+}
+.div-label-video {
+  //float: left;
+  font-size: 12px;
+  color: #97a1b4;
+}
+.div-label-practical {
+  font-size: 11px;
+  color: #bec5cf;
+}
+.div-newspaper-icon {
+  font-size: 25px;
+  vertical-align: middle;
 }
