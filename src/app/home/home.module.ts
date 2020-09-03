@@ -6,6 +6,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module'
 import { CourseTrainingComponent } from '../course-training/course-training.component';
+import { UpcomingRecommendedComponent } from '../upcoming-recommended/upcoming-recommended.component';
 
 
 
@@ -19,7 +20,7 @@ import { CourseTrainingComponent } from '../course-training/course-training.comp
 
 
   ],
-  declarations: [HomePage, CourseTrainingComponent],
+  declarations: [HomePage, CourseTrainingComponent, UpcomingRecommendedComponent],
 
 
 })

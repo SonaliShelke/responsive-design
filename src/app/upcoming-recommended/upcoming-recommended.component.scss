@@ -1,0 +1,50 @@
+.div-main-upcoming {
+    background: url("../../assets/image/hand-shake-img.jpg") no-repeat, #f12b2b;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    border-radius: 10px;
+    height: 251px;
+    max-width: 331px;
+    color: white;
+    padding: 24px 14px;
+    display: inline-block;
+    // margin: 7px;
+}
+.div-submain-upcoming {
+    // padding-top: 10px;
+    // padding-left: 10px;
+    // padding-right: 5px;
+}
+.div-upcoming-title {
+    color: #e18278;
+    padding: 2px 17px;
+    background-color: white;
+    //  margin-top: 5px;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.div-label-with-icon {
+    float: right;
+}
+.div-user-icon {
+    font-size: 18px;
+    font-weight: bolder;
+    vertical-align: middle;
+    margin-left: 14px;
+}
+.div-user-label {
+    font-size: 16px;
+    vertical-align: middle;
+    margin-left: 6px;
+    font-weight: bold;
+}
+
+.div-upcoming-contain {
+    margin-top: 61px;
+}
+.div-upcoming-subcontain {
+    // font-size: 20px;
+}

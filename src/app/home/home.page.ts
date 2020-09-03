@@ -9,6 +9,7 @@ export class HomePage {
 
   courses: any[];
   trainings: any[];
+  upcomings: any[];
 
 
   constructor() {
@@ -106,7 +107,49 @@ export class HomePage {
         //subHeadingIcon:'document-text-outline',
         //subHeadingIconLabel:'12 min Read',
         button: 'Add to Calender'
-      }]
+      }];
+
+    this.upcomings = [
+      {
+
+        //img: "../../assets/image/hand-shake-img.jpg",
+        color: '#937c71',
+        title: 'Product Training',
+        contain: 'Administrative Human Resources',
+        subContain: 'Stars in 3 Days',
+        subSubContain: 'COURSE',
+        icon1: 'people-outline',
+        iconLabel1: '15',
+        icon2: 'star-outline',
+        iconLabel2: '3.5',
+      },
+      {
+
+        //img: "../../assets/image/hand-shake-img.jpg",
+        color: '#bb6d69',
+        title: 'Internet',
+        contain: 'UX Design:6 Paper Prototyping',
+        subContain: 'Stars in 3 Days',
+        subSubContain: 'TRAINING',
+        icon1: 'people-outline',
+        iconLabel1: '15',
+        icon2: 'star-outline',
+        iconLabel2: '3.5',
+      },
+      {
+
+        //img: "../../assets/image/hand-shake-img.jpg",
+        color: '#80dce8',
+        title: 'Health',
+        contain: 'Introduction to Graphic Design (2016)',
+        subContain: 'Stars in 3 Days',
+        subSubContain: 'COURSE',
+        icon1: 'people-outline',
+        iconLabel1: '15',
+        icon2: 'star-outline',
+        iconLabel2: '3.5',
+      }
+    ]
 
   }
 }
