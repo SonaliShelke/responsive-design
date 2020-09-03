@@ -7,10 +7,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CourseTrainingComponent implements OnInit {
 
-  @Input()course: any;
-  //@Input()courseTraining:any;
+  @Input() course: any;
+
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
 }

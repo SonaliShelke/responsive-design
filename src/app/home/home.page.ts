@@ -112,7 +112,6 @@ export class HomePage {
     this.upcomings = [
       {
 
-        //img: "../../assets/image/hand-shake-img.jpg",
         color: '#937c71',
         title: 'Product Training',
         contain: 'Administrative Human Resources',
@@ -125,7 +124,6 @@ export class HomePage {
       },
       {
 
-        //img: "../../assets/image/hand-shake-img.jpg",
         color: '#bb6d69',
         title: 'Internet',
         contain: 'UX Design:6 Paper Prototyping',
@@ -138,7 +136,6 @@ export class HomePage {
       },
       {
 
-        //img: "../../assets/image/hand-shake-img.jpg",
         color: '#80dce8',
         title: 'Health',
         contain: 'Introduction to Graphic Design (2016)',
