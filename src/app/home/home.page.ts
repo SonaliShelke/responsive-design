@@ -39,7 +39,30 @@ export class HomePage {
         subHeadingIconLabel: '12 min Read',
         button: 'Continue',
         subcCoursesHeaderContain: 'STARS WED,31ST MARCH 2018',
-        subCouressContainData: 'A popular methos of cooking chicken in recent years bot in Barbeque contest as well as backyard bardeques is the beer-can chicken.Cooking a beer-can chicken couldnt be any easier but the results are worthwhile'
+        subCouressContainData: 'A popular methos of cooking chicken in recent years bot in Barbeque contest as well as backyard bardeques is the beer-can chicken.Cooking a beer-can chicken couldnt be any easier but the results are worthwhile',
+        tabs: {
+          overview: {
+            title: "COURSE OVERVIEW",
+            discription: `A popular methos of cooking chicken in recent years bot in Barbeque
+            contest as well as backyard bardeques is the beer-can chicken.Cooking a beer-can chicken couldnt be any easier
+            but the results are worthwhile A popular methos of cooking chicken in recent years bot in Barbeque contest as
+            well as backyard bardeques is the beer-can chicken.Cooking a beer-can chicken couldnt be any easier but the
+            results are worthwhile`,
+            righttitle: "THIS COURSE IS FOR",
+            rightDescription: `A popular methos of cooking chicken in recent years bot in Barbeque
+            contest as well as backyard bardeques is the beer-can chicken.Cooking a beer-can chicken couldnt be any easier
+            but the results are worthwhile A popular methos of cooking chicken in recent years bot in Barbeque contest as
+            well as backyard bardeques is the beer-can chicken.Cooking a beer-can chicken couldnt be any easier but the
+            results are worthwhile`
+          },
+          resourses: {
+            title: "resourses",
+            icon: 'newspaper-outline',
+          },
+          discussions: {
+            title: "couese"
+          }
+        }
 
       },
       {

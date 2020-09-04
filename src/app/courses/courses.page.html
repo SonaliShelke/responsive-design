@@ -16,7 +16,7 @@
         <h1>{{location.contain}} </h1>
         <span class="div-course-subcontain">{{location.subContain}}</span>
         <span class="div-course-subcontain">|{{location.subcCoursesHeaderContain}}</span><br>
-        <p class="div-subcontain">{{location.subCouressContainData}}</p>
+        <p class="div-course-sub-subcontain">{{location.subCouressContainData}}</p>
         <ion-button class="div-button">Enroll Now</ion-button>
       </div>
     </div>
@@ -35,11 +35,46 @@
 
 
     <div *ngIf="segmentModel==='overview'">
+      <div class="div-overview-main">
+        <div class="div-overview-left">
+          <span class="div-course-subcontain"> {{location.tabs.overview.title}} </span>
+
+          <p class="div-course-sub-subcontain">
+            {{location.tabs.overview.discription}}
+          </p>
+          <hr class="div-hr-divider">
+        </div>
+        <div class="div-overview-right">
+          <span class="div-course-subcontain"> {{location.tabs.overview.righttitle}} </span>
+
+          <p class="div-course-sub-subcontain">
+            {{location.tabs.overview.rightDescription}}
+          </p>
+          <hr class="div-hr-divider">
+        </div>
+
+      </div>
       <h1>dogs</h1>
       <h1>dogs</h1>
     </div>
 
     <div *ngIf="segmentModel==='resourses'">
+      <div class="div-resourses-main">
+        <div>
+          <div class="div-resourses-left">
+            <ion-icon class="contain-icon " [name]="location.tabs.resourses.icon"></ion-icon>
+            <ion-icon class="div-newspaper-icon" name="newspaper-outline"></ion-icon>
+          </div>
+          <div class="div-resourses-right">
+            <spnan class="div-resourses-views">121 Views</spnan><span>Download</span>
+            <ion-icon class="div-newspaper-icon" name="download-outline"></ion-icon>
+          </div>
+          <div class="div-resourses-middle">
+            <span class="div-label-video">Video Game Playing with Imagination Practical UX Weekly</span>
+          </div>
+
+        </div>
+      </div>
       <h1>Cats Segment</h1>
     </div>
     <div *ngIf="segmentModel==='discussions'">

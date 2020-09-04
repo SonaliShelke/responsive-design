@@ -32,6 +32,41 @@
     margin-left: 355px;
     height: 251px;
 }
+.div-hr-divider {
+    background-color: #d2d6de;
+}
+.div-overview-left {
+    float: left;
+    width: 50%;
+    padding-right: 30px;
+}
+
 .div-course-subcontain {
     color: #a5b1c2;
+}
+.div-course-sub-subcontain {
+    color: #939eaf;
+}
+.div-overview-main {
+    display: inline-block;
+    margin: 20px;
+}
+.div-resourses-left {
+    float: left;
+    color: #939eaf;
+    font-size: 20px;
+    font-weight: bold;
+}
+.div-resourses-right {
+    float: right;
+    color: #939eaf;
+    margin-left: 5px;
+    padding-left: 10px;
+}
+.div-resourses-middle {
+    margin-left: 50px;
+    margin-right: 100px;
+}
+.div-resourses-views {
+    padding-right: 20px;
 }
