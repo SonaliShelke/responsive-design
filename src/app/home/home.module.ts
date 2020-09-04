@@ -8,20 +8,14 @@ import { HomePageRoutingModule } from './home-routing.module'
 import { CourseTrainingComponent } from '../course-training/course-training.component';
 import { UpcomingRecommendedComponent } from '../upcoming-recommended/upcoming-recommended.component';
 
-
-
-
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     HomePageRoutingModule
-
-
   ],
   declarations: [HomePage, CourseTrainingComponent, UpcomingRecommendedComponent],
-
 
 })
 export class HomePageModule { }

@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>courses</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="location" class="div-main-courses">
+
+    <div>
+      <div class="div-sub-main-courses" [ngStyle]="{ backgroundColor: location.color }">
+        <span class="div-course-title" [ngStyle]="{ color: location.color }">{{location.title}} </span>
+      </div>
+
+      <div class="div-main-right-course">
+        <h1>{{location.contain}} </h1>
+        <span class="div-course-subcontain">{{location.subContain}}</span>
+        <span class="div-course-subcontain">|{{location.subcCoursesHeaderContain}}</span><br>
+        <p class="div-subcontain">{{location.subCouressContainData}}</p>
+        <ion-button class="div-button">Enroll Now</ion-button>
+      </div>
+    </div>
+    <ion-segment (ionChange)="segmentChanged($event)" [(ngModel)]="segmentModel">
+      <ion-segment-button value="overview">
+        <ion-label>Overview</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="resourses">
+        <ion-label>Resourses</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="discussions">
+        <ion-label>Discussions</ion-label>
+      </ion-segment-button>
+
+    </ion-segment>
+
+
+    <div *ngIf="segmentModel==='overview'">
+      <h1>dogs</h1>
+      <h1>dogs</h1>
+    </div>
+
+    <div *ngIf="segmentModel==='resourses'">
+      <h1>Cats Segment</h1>
+    </div>
+    <div *ngIf="segmentModel==='discussions'">
+      <h1>Discussion Segment</h1>
+    </div>
+
+
+  </div>
+
+
+
+
+</ion-content>

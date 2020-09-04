@@ -1,4 +1,5 @@
 import { Component, Input, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,13 +7,14 @@ import { Component, Input, Output } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  [x: string]: any;
 
   courses: any[];
   trainings: any[];
   upcomings: any[];
 
 
-  constructor() {
+  constructor(private router: Router) {
 
     this.courses = [
       {
@@ -35,7 +37,10 @@ export class HomePage {
         subChildSubContain: 'This lessons covers the basics of settings up grid in sketch, it is very popular couese taken by man ......',
         subHeadingIcon: 'document-text-outline',
         subHeadingIconLabel: '12 min Read',
-        button: 'Continue'
+        button: 'Continue',
+        subcCoursesHeaderContain: 'STARS WED,31ST MARCH 2018',
+        subCouressContainData: 'A popular methos of cooking chicken in recent years bot in Barbeque contest as well as backyard bardeques is the beer-can chicken.Cooking a beer-can chicken couldnt be any easier but the results are worthwhile'
+
       },
       {
         color: '#886c5e',

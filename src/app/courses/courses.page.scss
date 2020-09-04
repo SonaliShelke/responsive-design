@@ -1,0 +1,37 @@
+.div-main-courses {
+    margin: 15px;
+    padding: 10px;
+    //float: left;
+    display: inline-block;
+}
+.div-sub-main-courses {
+    background: url("../../assets/image/hand-shake-img.jpg") no-repeat, #f12b2b;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    border-radius: 10px;
+    height: 251px;
+    width: 331px;
+    color: white;
+    padding: 24px 14px;
+    //display: inline-block;
+    float: left;
+}
+
+.div-course-title {
+    color: #e18278;
+    padding: 2px 17px;
+    background-color: white;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.div-main-right-course {
+    margin-left: 355px;
+    height: 251px;
+}
+.div-course-subcontain {
+    color: #a5b1c2;
+}
