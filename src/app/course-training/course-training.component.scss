@@ -17,7 +17,6 @@
   color: white;
   float: left;
   width: calc(100% - 94px);
-  //border-radius: 10px;
   border-radius: 10px 0px 0px 0px;
 }
 
@@ -41,6 +40,9 @@
   margin-top: 10px;
 }
 
+.div-child-contain {
+  color: #9da9bb;
+}
 .div-contain-right {
   float: right;
 }
@@ -51,21 +53,19 @@
   width: 94px;
 }
 .contain-icon {
-  font-size: 30px;
-  color: gray;
-
+  font-size: 24px;
+  color: #368fff;
   vertical-align: middle;
 }
 .contain-label {
-  color: blue;
+  color: #368fff;
   font-size: 20px;
-
   vertical-align: middle;
   padding: 10px;
 }
 .div-sub-contain {
-  margin-left: 20px;
   padding-bottom: 15px;
+  margin: 0px 20px;
 }
 
 .progress-contain {
@@ -76,6 +76,8 @@
   width: calc(100% - 70px);
   float: left;
   margin-top: 10px;
+  height: 3px;
+  border-radius: 20px;
 }
 .progress-bar-contain {
   padding-left: 8px;
@@ -89,18 +91,18 @@
   color: #b0b7c6;
 }
 .div-sub-heading {
-  padding-top: 10px;
-
+  padding: 15px 0px;
   color: #abb2c0;
   vertical-align: middle;
 }
 .div-sub-icon {
   vertical-align: middle;
-  font-size: 30px;
+  font-size: 20px;
 }
 .div-span-label {
   font-size: 15px;
   vertical-align: middle;
+  padding: 0px 5px;
 }
 .div-button {
   font-size: 14px;

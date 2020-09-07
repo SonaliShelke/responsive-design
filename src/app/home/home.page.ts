@@ -32,8 +32,120 @@ export class HomePage {
         iconLabel4: '15',
         progressBar: '0.3',
         progressBarLabel: '(34%)',
-        childContain: 'Next',
-        subcChildContain: 'How to set DIV in sketch App',
+        childContain: 'Next:',
+        subcChildContain: 'How to set DIV in sketch-app',
+        subChildSubContain: 'This lessons covers the basics of settings up grid in sketch, it is very popular couese taken by man ',
+        subHeadingIcon: 'document-text-outline',
+        subHeadingIconLabel: '12 min Read',
+        button: 'Continue',
+        subcCoursesHeaderContain: 'STARS WED,31ST MARCH 2018',
+        subCouressContainData: 'A popular methos of cooking chicken in recent years bot in Barbeque contest as well as backyard bardeques is the beer-can chicken.Cooking a beer-can chicken couldnt be any easier but the results are worthwhile',
+        tabs: {
+          overview: {
+            title: "COURSE OVERVIEW",
+            discription: `A popular methos of cooking chicken in recent years bot in Barbeque
+            contest as well as backyard bardeques is the beer-can chicken.Cooking a beer-can chicken couldnt be any easier
+            but the results are worthwhile A popular methos of cooking chicken in recent years bot in Barbeque contest as
+            well as backyard bardeques is the beer-can chicken.Cooking a beer-can chicken couldnt be any easier but the
+            results are worthwhile`,
+            righttitle: "THIS COURSE IS FOR",
+            rightDescription: `A popular methos of cooking chicken in recent years bot in Barbeque
+            contest as well as backyard bardeques is the beer-can chicken.Cooking a beer-can chicken couldnt be any easier
+            but the results are worthwhile A popular methos of cooking chicken in recent years bot in Barbeque contest as
+            well as backyard bardeques is the beer-can chicken.Cooking a beer-can chicken couldnt be any easier but the
+            results are worthwhile`
+          },
+          resourses: [
+            {
+
+              icon: 'newspaper-outline',
+              discription: 'Live Poker How To Win Tournament Games',
+              subDiscription: 'New',
+              discriptionRight: '121 Views ',
+              subDiscriptionRight: ' 10 Downloads',
+              discriptionView: 'View',
+              downloadIcon: 'download-outline'
+            },
+            {
+
+              icon: 'newspaper-outline',
+              discription: 'Telescopes 101',
+              //subDiscription: 'New',
+              discriptionRight: '121 Views ',
+              subDiscriptionRight: ' 10 Downloads',
+              discriptionView: 'View',
+              downloadIcon: 'download-outline'
+            },
+            {
+              title: "resourses",
+              icon: 'newspaper-outline',
+              discription: 'Going Wireless With Your Headphones',
+              // subDiscription: 'New',
+              discriptionRight: '07 Views ',
+              subDiscriptionRight: ' 01 Downloads',
+              discriptionView: 'View',
+              downloadIcon: 'download-outline'
+            },
+            {
+
+              icon: 'newspaper-outline',
+              discription: 'The Glossary Of Telescopes',
+              // subDiscription: 'New',
+              discriptionRight: '55 Views ',
+              subDiscriptionRight: ' 29 Downloads',
+              discriptionView: 'View',
+              downloadIcon: 'download-outline'
+            },
+            {
+
+              icon: 'newspaper-outline',
+              discription: 'On Being Human',
+              // subDiscription: 'New',
+              discriptionRight: '243 Views ',
+              subDiscriptionRight: ' 124 Downloads',
+              discriptionView: 'View',
+              downloadIcon: 'download-outline'
+            },
+            {
+
+              icon: 'newspaper-outline',
+              discription: 'A Brief History Of Creation',
+              // subDiscription: 'New',
+              discriptionRight: '153 Views ',
+              subDiscriptionRight: ' 67 Downloads',
+              discriptionView: 'View',
+              downloadIcon: 'download-outline'
+            },
+          ],
+          discussions: {
+            title: "DISCUSSION",
+            discussionHeading: 'Deciphring Marketing Lingo For Small Business Owners',
+            discussionContain: 'Experts doubt will even try or that if they do that the will be successfull. Ones the bill was passed and signed into law by the president, it became much harder to reserse the law',
+            usericon: 'person-circle',
+            userName: 'Nicholas Green',
+            likeicon: 'thumbs-up',
+            likedesc: '74 Likes'
+          }
+        }
+
+      },
+      {
+        color: '#886c5e',
+        title: 'Product Training',
+        contain: 'Modeling with SOLID WORKS',
+        subContain: 'COURSE',
+        icon1: 'people-outline',
+        iconLabel1: '43',
+        icon2: 'star-outline',
+        iconLabel2: '3',
+        icon3: 'chatbubbles-outline',
+        iconLabel3: '12',
+        icon4: 'book-outline',
+        iconLabel4: '4',
+        progressBar: '0.3',
+        progressBarLabel: '(34%)',
+        childContain: 'Next:',
+        subcChildContain: 'Shortcut in Solidworks',
         subChildSubContain: 'This lessons covers the basics of settings up grid in sketch, it is very popular couese taken by man ......',
         subHeadingIcon: 'document-text-outline',
         subHeadingIconLabel: '12 min Read',
@@ -55,37 +167,78 @@ export class HomePage {
             well as backyard bardeques is the beer-can chicken.Cooking a beer-can chicken couldnt be any easier but the
             results are worthwhile`
           },
-          resourses: {
-            title: "resourses",
-            icon: 'newspaper-outline',
-          },
+          resourses: [
+            {
+
+              icon: 'newspaper-outline',
+              discription: 'Live Poker How To Win Tournament Games',
+              subDiscription: 'New',
+              discriptionRight: '121 Views ',
+              subDiscriptionRight: ' 10 Downloads',
+              discriptionView: 'View',
+              downloadIcon: 'download-outline'
+            },
+            {
+
+              icon: 'newspaper-outline',
+              discription: 'Telescopes 101',
+              //subDiscription: 'New',
+              discriptionRight: '121 Views ',
+              subDiscriptionRight: ' 10 Downloads',
+              discriptionView: 'View',
+              downloadIcon: 'download-outline'
+            },
+            {
+              title: "resourses",
+              icon: 'newspaper-outline',
+              discription: 'Going Wireless With Your Headphones',
+              // subDiscription: 'New',
+              discriptionRight: '07 Views ',
+              subDiscriptionRight: ' 01 Downloads',
+              discriptionView: 'View',
+              downloadIcon: 'download-outline'
+            },
+            {
+
+              icon: 'newspaper-outline',
+              discription: 'The Glossary Of Telescopes',
+              // subDiscription: 'New',
+              discriptionRight: '55 Views ',
+              subDiscriptionRight: ' 29 Downloads',
+              discriptionView: 'View',
+              downloadIcon: 'download-outline'
+            },
+            {
+
+              icon: 'newspaper-outline',
+              discription: 'On Being Human',
+              // subDiscription: 'New',
+              discriptionRight: '243 Views ',
+              subDiscriptionRight: ' 124 Downloads',
+              discriptionView: 'View',
+              downloadIcon: 'download-outline'
+            },
+            {
+
+              icon: 'newspaper-outline',
+              discription: 'A Brief History Of Creation',
+              // subDiscription: 'New',
+              discriptionRight: '153 Views ',
+              subDiscriptionRight: ' 67 Downloads',
+              discriptionView: 'View',
+              downloadIcon: 'download-outline'
+            },
+          ],
           discussions: {
-            title: "couese"
+            title: "DISCUSSION",
+            discussionHeading: 'Deciphring Marketing Lingo For Small Business Owners',
+            discussionContain: 'Experts doubt will even try or that if they do that the will be successfull. Ones the bill was passed and signed into law by the president, it became much harder to reserse the law',
+            usericon: 'person-circle',
+            userName: 'Nicholas Green',
+            likeicon: 'thumbs-up',
+            likedesc: '74 Likes'
           }
         }
-
-      },
-      {
-        color: '#886c5e',
-        title: 'Product Training',
-        contain: 'Modeling with SOLID WORKS',
-        subContain: 'COURSE',
-        icon1: 'people-outline',
-        iconLabel1: '43',
-        icon2: 'star-outline',
-        iconLabel2: '3',
-        icon3: 'chatbubbles-outline',
-        iconLabel3: '12',
-        icon4: 'book-outline',
-        iconLabel4: '4',
-        progressBar: '0.3',
-        progressBarLabel: '(34%)',
-        childContain: 'Next',
-        subcChildContain: 'Shortcut in Solidworks',
-        subChildSubContain: 'This lessons covers the basics of settings up grid in sketch, it is very popular couese taken by man ......',
-        subHeadingIcon: 'document-text-outline',
-        subHeadingIconLabel: '12 min Read',
-        button: 'Continue'
       }
 
     ];
@@ -104,7 +257,7 @@ export class HomePage {
         iconLabel3: '0',
         icon4: 'book-outline',
         iconLabel4: '10',
-        childContain: 'Next',
+        childContain: 'Next:',
         subcChildContain: 'Wednesday, 18th Feb, 2018 IIT Mumbai',
         // color:'#ffbf00',
         subTitle: 'Main Gate Road,Powai,Mumbail-400076',
@@ -128,7 +281,7 @@ export class HomePage {
         iconLabel4: '3',
         // progressBar:'0.3',
         // progressBarLabel:'(34%)',
-        childContain: 'Next',
+        childContain: 'Next:',
         subcChildContain: 'Tuesday, 01st Mar, 2018 MIT - ID Pune',
         subTitle: 'Main Gate Road,Powai,Mumbail-400076',
         // subChildSubContain:'This class covers the basics of settings up grid in sketch, it is very popular couese taken by man ......',

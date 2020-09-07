@@ -20,71 +20,90 @@
         <ion-button class="div-button">Enroll Now</ion-button>
       </div>
     </div>
+
     <ion-segment (ionChange)="segmentChanged($event)" [(ngModel)]="segmentModel">
       <ion-segment-button value="overview">
+
         <ion-label>Overview</ion-label>
       </ion-segment-button>
-      <ion-segment-button value="resourses">
+      <ion-segment-button value="resourses" layout="icon-start">
+        <ion-icon name="book-outline"></ion-icon>
         <ion-label>Resourses</ion-label>
       </ion-segment-button>
-      <ion-segment-button value="discussions">
+
+      <ion-segment-button value="discussions" layout="icon-start">
+        <ion-icon name="chatbubbles-outline"></ion-icon>
         <ion-label>Discussions</ion-label>
       </ion-segment-button>
 
     </ion-segment>
 
+    <div class="div-main-ion-segment">
+      <div *ngFor="let overview of[].constructor(10)">
+        <div *ngIf="segmentModel==='overview'">
+          <div class="div-overview-main">
+            <div class="div-overview-left">
+              <span> {{location.tabs.overview.title}} </span>
 
-    <div *ngIf="segmentModel==='overview'">
-      <div class="div-overview-main">
-        <div class="div-overview-left">
-          <span class="div-course-subcontain"> {{location.tabs.overview.title}} </span>
+              <p class="div-course-sub-subcontain">
+                {{location.tabs.overview.discription}}
+              </p>
+              <hr class="div-hr-divider">
+            </div>
+            <div class="div-overview-right">
+              <span> {{location.tabs.overview.righttitle}} </span>
 
-          <p class="div-course-sub-subcontain">
-            {{location.tabs.overview.discription}}
-          </p>
-          <hr class="div-hr-divider">
-        </div>
-        <div class="div-overview-right">
-          <span class="div-course-subcontain"> {{location.tabs.overview.righttitle}} </span>
+              <p class="div-course-sub-subcontain">
+                {{location.tabs.overview.rightDescription}}
+              </p>
+              <hr class="div-hr-divider">
+            </div>
 
-          <p class="div-course-sub-subcontain">
-            {{location.tabs.overview.rightDescription}}
-          </p>
-          <hr class="div-hr-divider">
-        </div>
-
-      </div>
-      <h1>dogs</h1>
-      <h1>dogs</h1>
-    </div>
-
-    <div *ngIf="segmentModel==='resourses'">
-      <div class="div-resourses-main">
-        <div>
-          <div class="div-resourses-left">
-            <ion-icon class="contain-icon " [name]="location.tabs.resourses.icon"></ion-icon>
-            <ion-icon class="div-newspaper-icon" name="newspaper-outline"></ion-icon>
-          </div>
-          <div class="div-resourses-right">
-            <span class="div-resourses-views">121 Views<span></span>Download</span>
-            <ion-icon class="div-newspaper-icon" name="download-outline"></ion-icon>
-          </div>
-          <div class="div-resourses-middle">
-            <span class="div-label-video">Video Game Playing with Imagination Practical UX Weekly</span>
           </div>
 
         </div>
       </div>
-      <h1>Cats Segment</h1>
-    </div>
-    <div *ngIf="segmentModel==='discussions'">
-      <h1>Discussion Segment</h1>
-    </div>
 
+      <div *ngIf="segmentModel==='resourses'">
+        <div class="div-resourses-main">
+
+
+          <div class="div-resourses-main-contain" *ngFor="let resourse of location.tabs.resourses ; let i=index">
+
+            <ion-icon class="resourse-contain-icon " [name]="resourse.icon"></ion-icon>
+            <span class="div-resourses-views">{{resourse.discription}}</span>
+            <span *ngIf="resourse.subDiscription" class="resourse-new-label">{{resourse.subDiscription}}</span>
+            <div class="div-resourses-right">
+
+
+              <span class="div-resourses-right-label">{{resourse.discriptionRight}}</span>
+              <span class="div-resourses-right-label">{{resourse.subDiscriptionRight}}</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div *ngIf="segmentModel==='discussions'">
+        <div class="div-discussions-main" *ngFor="let item of[].constructor(10)">
+          <span>{{location.tabs.discussions.title}}</span>
+          <div class="div-discussion-heading">{{location.tabs.discussions.discussionHeading}}</div>
+          <div class="div-discussion-contain">{{location.tabs.discussions.discussionContain}}</div>
+          <div class="div-discussion-sub-contain">
+            <ion-icon class="div-discussion-icon" [name]="location.tabs.discussions.usericon"></ion-icon>
+            <span class="div-discussion-userName">{{location.tabs.discussions.userName}}</span>
+            <span class="div-discussion-likedesc">{{location.tabs.discussions.likedesc}}</span>
+            <ion-icon class="div-discussion-likeicon" [name]="location.tabs.discussions.likeicon"></ion-icon>
+          </div>
+          <hr class="div-hr-divider">
+        </div>
+
+      </div>
+
+
+    </div>
 
   </div>
-
-
 
 
 </ion-content>

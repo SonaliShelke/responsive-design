@@ -1,7 +1,6 @@
 .div-main-courses {
     margin: 15px;
     padding: 10px;
-    //float: left;
     display: inline-block;
 }
 .div-sub-main-courses {
@@ -14,7 +13,6 @@
     width: 331px;
     color: white;
     padding: 24px 14px;
-    //display: inline-block;
     float: left;
 }
 
@@ -35,10 +33,16 @@
 .div-hr-divider {
     background-color: #d2d6de;
 }
+.div-main-ion-segment {
+    background-color: #fafafa;
+    padding: 30px 50px;
+}
+
 .div-overview-left {
     float: left;
     width: 50%;
-    padding-right: 30px;
+    padding: 0px 30px;
+    padding: 0px 15px;
 }
 
 .div-course-subcontain {
@@ -51,22 +55,78 @@
     display: inline-block;
     margin: 20px;
 }
-.div-resourses-left {
-    float: left;
-    color: #939eaf;
+.div-resourses-main {
+    margin-left: 20px;
+}
+.div-resourses-main-contain {
+    padding: 15px;
+}
+.resourse-contain-icon {
     font-size: 20px;
-    font-weight: bold;
-}
-.div-resourses-right {
-    float: right;
     color: #939eaf;
-    margin-left: 5px;
-    padding-left: 10px;
-}
-.div-resourses-middle {
-    margin-left: 50px;
-    margin-right: 100px;
+    padding-right: 10px;
+    vertical-align: middle;
 }
 .div-resourses-views {
     padding-right: 20px;
+    vertical-align: middle;
+    font-size: 21px;
+}
+
+.resourse-new-label {
+    background-color: #f45c60;
+    padding: 2px 9px;
+    color: white;
+    font-size: 15px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.div-resourses-right {
+    float: right;
+    color: #939eaf;
+}
+.div-resourses-right-label {
+    margin-left: 5px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.div-discussion-heading {
+    font-size: 18px;
+    color: #627b97;
+    font-weight: bold;
+    padding-top: 32px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+.div-discussion-contain {
+    color: #7a879d;
+    font-size: 16px;
+    padding-top: 15px;
+}
+.div-discussion-sub-contain {
+    padding-top: 10px;
+    font-size: 25px;
+}
+.div-discussion-icon {
+    vertical-align: middle;
+    color: lightskyblue;
+    font-size: 45px;
+}
+.div-discussion-userName {
+    padding-left: 10px;
+    color: #577896;
+}
+.div-discussion-likeicon {
+    float: right;
+    font-size: 18px;
+    color: #3999ff;
+    vertical-align: middle;
+}
+.div-discussion-likedesc {
+    float: right;
+    font-size: 15px;
+    color: #3999ff;
+    padding: 0px 10px;
 }

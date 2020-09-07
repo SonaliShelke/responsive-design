@@ -1,16 +1,10 @@
 .div-main {
-  // background-color: lightyellow;
   background-color: #f7f9fb;
-  //height: 100%;
   width: 100%;
   padding-left: 30px;
 }
-.div-header {
-  //display: inline-block;
-}
 
 .div-header-right {
-  //display: inline-block;
   float: right;
   color: #abb2c0;
 }
@@ -24,14 +18,13 @@
 }
 .div-header-logo {
   width: 55px;
-  //float: left;
 }
 .div-header-input {
   width: 200px;
   float: left;
   margin-top: 5px;
   font-size: 15px;
-  color: #abb2c0; //red; //#c9ced6;
+  color: #abb2c0;
 }
 .div-header-arrow-icon {
   width: 12px;
@@ -40,8 +33,6 @@
 
 .div-submain {
   background-color: #ffffff;
-  //padding-left: 10px;
-  // margin-left: 30px;
   margin-top: 15px;
   border-radius: 7px;
   padding-right: 20px;
@@ -58,7 +49,6 @@
   font-size: 20px;
   margin: 5px;
   margin-left: 20px;
-  //padding-right: 10px;
   vertical-align: middle;
 }
 
@@ -79,20 +69,18 @@
   padding-left: 12px;
 }
 .div-right-sidenav-main {
-  //background-color: #f7f9fb;
   padding: 10px;
   margin-top: 10px;
 }
 .div-icon-main {
   margin-top: 25px;
   font-size: 25px;
-  //margin-left: 7px;
 }
 .div-icon-main > ion-icon {
   margin-right: 10px;
 }
 .div-ribbon-icon {
-  color: #f0512e; //#b24539
+  color: #f0512e;
 }
 .div-trophy-icon {
   color: #b24539;
@@ -102,13 +90,13 @@
 }
 .div-label-main {
   color: #8e9db2;
-
-  //margin-top: 5px;
 }
 .div-label {
   margin: 15px 7px;
-
-  padding-bottom: 5px;
+  padding: 0px 7px 5px 0px;
+}
+.div-label-view {
+  padding: 0px 25px;
 }
 .div-hr-divider {
   background-color: #d2d6de;
@@ -119,21 +107,17 @@
   vertical-align: middle;
 }
 .div-small-progress-bar {
-  // ion-progress-bar {
-
   --ion-color-base-rgb: rgb(225, 228, 234);
-  // --buffer-background: red;
   --progress-background: rgb(88, 214, 141);
-  //}
-  //color: green;
   margin-top: 5px;
+  border-radius: 20px;
+  height: 2px;
 }
 .div-bar-chart {
   height: 150px;
   font-weight: bold;
   font-size: 35px;
   width: 60%;
-  // background-color: lightyellow;
   background-color: #f7f9fb;
   text-align: center;
   padding-top: 20px;
@@ -151,11 +135,9 @@
   padding-left: 8px;
 }
 .div-practical-label {
-  //padding-left: 10px;
   margin-left: 10px;
 }
 .div-label-video {
-  //float: left;
   font-size: 12px;
   color: #97a1b4;
 }

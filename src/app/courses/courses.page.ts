@@ -27,12 +27,6 @@ export class CoursesPage implements OnInit {
   }
 
   ngOnInit() {
-    // this.location = this.utilityservice.getExtras();
-
-    // if (!this.location) {
-    //   this.router.navigateByUrl('/home');
-    // }
-    // console.log('course details init', this.location);
 
   }
 
@@ -42,10 +36,7 @@ export class CoursesPage implements OnInit {
   getbuttonclick() {
     this.location = this.utilityservice.getExtras();
 
-    console.log('coursedata', this.utilityservice.getExtras());
-    console.log('data', this.location);
   }
-
 
   segmentChanged(event) {
     console.log('event', this.segmentModel);
